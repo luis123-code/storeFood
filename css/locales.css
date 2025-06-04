@@ -1,0 +1,83 @@
+
+
+.Subtitle {
+   
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    gap: 1rem 0;
+}
+
+.main__caja {
+    width: 350px;
+    height: 250px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+   
+    text-align: left;
+    transition: all 0.25s;
+    background-color: #E2AC26;
+  
+    
+}
+
+
+.sucursal {
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.telefono {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+
+.local a {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.horario {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 200;
+    margin-left: 20px;
+    color: rgb(95, 93, 93);
+}
+
+
+
+
+@media screen and (max-width: 1130px) {
+
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+
+    .main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+

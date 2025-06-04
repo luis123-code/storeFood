@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="/img/img_2/logo (1).ico">
+
+ 
+    <title>El Pollon - Menu</title>
+    <script
+      src="https://kit.fontawesome.com/df59baf6b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script defer src="../js/menu/stock.js"></script>
+    <script defer src="../js/menu/modal.js"></script>
+    <script defer src="../js/menu/app.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__top">
+        <img class="nav__logo" src="../img/logo.png" alt="logo" />
+        <i
+          id="btnMenu"
+          style="color: #fff; font-size: 2rem"
+          class="fa-solid fa-bars"
+        ></i>
+      </div>
+
+      <ul class="nav__menu hide">
+        <li><a class="menu__item" href="../index.html">Inicio</a></li>
+        <li><a class="menu__item" href="menu.html">Menú</a></li>
+        <li><a class="menu__item" href="locales.html">Locales</a></li>
+        <li><a class="menu__item" href="nosotros.html">Nosotros</a></li>
+        <li><a class="menu__item" href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1 id="titulo" class="titulo">Menu del Pollón</h1>
+      <button id="boton-carrito">
+        <i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span>
+      </button>
+    </header>
+    <main id="contenedor-productos"></main>
+
+    <div class="modal-contenedor">
+      <div class="modal-carrito">
+        <h3>Carrito</h3>
+        <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+        <div id="carrito-contenedor"></div>
+        <p class="precioProducto">
+          Precio total: S/<span id="precioTotal">0</span>
+        </p>
+        <button id="vaciar-carrito" class="boton-agregar">
+          Vaciar carrito
+        </button>
+      </div>
+    </div>
+
+    <footer class="footer mt-4">
+      <ul class="footer__menu">
+        <li><a class="footer__item" href="#">NOSOTROS</a></li>
+        <li><a class="footer__item" href="#">NUESTRA CARTA</a></li>
+        <li><a class="footer__item" href="#">POLÍTICAS Y TÉRMINOS</a></li>
+        <li><a class="footer__item" href="#">ACERCA DEL POLLON</a></li>
+        <li><a class="footer__item" href="#">ATENCIÓN AL CLIENTE</a></li>
+      </ul>
+    </footer>
+
+    <script src="../js/menu.js"></script>
+  </body>
+</html>
